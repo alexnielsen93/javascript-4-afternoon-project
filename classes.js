@@ -181,6 +181,6 @@ class Machine{
       console.log(this.wear_and_tear_count)
       this.wear_and_tear_count -=10;
       this.needs_reboot = false;
-    }
+    }.bind(this)
 }
 }
